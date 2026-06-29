@@ -3,299 +3,345 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pilupu | డిజిటల్ ఆరోగ్య సేవలు</title>
-  <meta name="description" content="Pilupu ద్వారా విశ్వసనీయమైన ఆరోగ్య సేవలు, వైద్య సంప్రదింపులు, కుటుంబ ఆరోగ్య నిర్వహణ మరియు అత్యవసర సహాయం సులభంగా పొందండి." />
-  <meta name="keywords" content="Pilupu, ఆరోగ్యం, వైద్య సేవలు, డాక్టర్ సంప్రదింపు, తెలుగు ఆరోగ్య సేవలు" />
+
+  <title>Pilupu | ప్రతి పిలుపు వినబడాలి</title>
+  <meta name="description" content="మాట్లాడే సామర్థ్యాన్ని కోల్పోయిన వ్యక్తులు తమ కుటుంబంతో మళ్లీ సులభంగా సంభాషించగలిగే భవిష్యత్తు కోసం పుట్టిన ఒక ఆలోచన Pilupu." />
+  <meta name="keywords" content="Pilupu, తెలుగు, కమ్యూనికేషన్, పక్షవాతం, కుటుంబ సంరక్షణ, సహాయక సాంకేతికత, కృత్రిమ మేధస్సు" />
   <meta name="author" content="Pilupu" />
-  <meta name="theme-color" content="#0f766e" />
+  <meta name="theme-color" content="#f6f2ea" />
+
+  <meta property="og:title" content="Pilupu | ప్రతి పిలుపు వినబడాలి" />
+  <meta property="og:description" content="మాటలు రాని క్షణాల్లో కూడా మనసు వినబడేలా చేయాలనే ఒక భవిష్యత్ ప్రయత్నం." />
+  <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <a class="skip-link" href="#main">ప్రధాన విషయానికి వెళ్లండి</a>
 
-  <header class="site-header" id="top">
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader-mark">Pilupu</div>
+  </div>
+
+  <a class="skip-link" href="#main">ప్రధాన విషయానికి వెళ్లండి</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="ambient-particles" aria-hidden="true"></div>
+
+  <header class="site-header">
     <nav class="nav" aria-label="ప్రధాన నావిగేషన్">
-      <a class="brand" href="#top" aria-label="Pilupu మొదటి భాగం">
-        <span class="brand-mark" aria-hidden="true">+</span>
+      <a class="brand" href="#top" aria-label="Pilupu ప్రారంభానికి వెళ్లండి">
+        <span class="brand-symbol" aria-hidden="true"></span>
         <span>Pilupu</span>
       </a>
 
       <button class="menu-toggle" type="button" aria-label="మెనూ తెరవండి" aria-expanded="false">
         <span></span>
         <span></span>
-        <span></span>
       </button>
 
-      <div class="nav-links">
-        <a href="#services">సేవలు</a>
-        <a href="#care">సంరక్షణ</a>
-        <a href="#doctors">వైద్యులు</a>
-        <a href="#pricing">ప్లాన్లు</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#story">మన కథ</a>
+        <a href="#problem">సమస్య</a>
+        <a href="#vision">మా లక్ష్యం</a>
+        <a href="#journey">ప్రయాణం</a>
+        <a href="#ideas">మీ ఆలోచనలు</a>
         <a href="#contact">సంప్రదించండి</a>
       </div>
 
-      <button class="theme-toggle" type="button" aria-label="థీమ్ మార్చండి">
-        <span class="theme-icon" aria-hidden="true">☾</span>
+      <button class="theme-toggle" type="button" aria-label="రంగు విధానం మార్చండి">
+        <span aria-hidden="true">◐</span>
       </button>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section">
-      <div class="hero-bg" aria-hidden="true"></div>
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-aurora" aria-hidden="true"></div>
+      <div class="hero-noise" aria-hidden="true"></div>
+
       <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <p class="eyebrow">మీ కుటుంబానికి నమ్మకమైన డిజిటల్ ఆరోగ్య భాగస్వామి</p>
-          <h1>Pilupu</h1>
+        <div class="hero-copy reveal">
+          <p class="kicker">ఒక ఆలోచన. ఒక కుటుంబ అనుభవం. ఒక పెద్ద ఆశ.</p>
+          <h1 id="heroTitle">ప్రతి పిలుపు...<br />వినబడాలి.</h1>
           <p class="hero-text">
-            ఇంటి నుంచే వైద్య సంప్రదింపులు, ఆరోగ్య రికార్డులు, మందుల గుర్తింపులు,
-            అత్యవసర సహాయం అన్నీ ఒకే చోట.
+            మాట్లాడే సామర్థ్యాన్ని కోల్పోయిన వ్యక్తులు తమ కుటుంబ సభ్యులతో మళ్లీ
+            సులభంగా సంభాషించగలిగే భవిష్యత్తును నిర్మిస్తున్నాం.
           </p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">అపాయింట్‌మెంట్ బుక్ చేయండి</a>
-            <a class="btn btn-secondary" href="#services">సేవలు చూడండి</a>
-          </div>
-          <div class="trust-row" aria-label="విశ్వాస సూచికలు">
-            <span>24/7 సహాయం</span>
-            <span>ధృవీకరించిన వైద్యులు</span>
-            <span>గోప్యతకు ప్రాధాన్యం</span>
+            <a class="magnetic-button primary-button" href="#ideas">
+              <span>మా ప్రయాణంలో భాగమవ్వండి</span>
+            </a>
+            <a class="magnetic-button ghost-button" href="#contact">
+              <span>మీ ఆలోచన పంచుకోండి</span>
+            </a>
           </div>
         </div>
 
-        <div class="hero-panel reveal" aria-label="ఆరోగ్య డాష్‌బోర్డ్ నమూనా">
-          <div class="glass-card main-card">
-            <div class="card-top">
-              <span class="status-dot"></span>
-              <span>ఆరోగ్య స్థితి</span>
+        <div class="hero-art reveal" aria-label="నిశ్శబ్దం నుంచి మాటగా మారుతున్న భావన">
+          <div class="portrait-scene">
+            <div class="soft-sun"></div>
+            <div class="human-silhouette">
+              <span class="head"></span>
+              <span class="body"></span>
             </div>
-            <strong>సాధారణం</strong>
-            <p>మీ కుటుంబ ఆరోగ్య వివరాలు సురక్షితంగా ఉన్నాయి.</p>
+            <div class="message-cloud cloud-one">నీళ్లు</div>
+            <div class="message-cloud cloud-two">నొప్పి</div>
+            <div class="message-cloud cloud-three">ధన్యవాదాలు</div>
+            <div class="pulse-ring ring-one"></div>
+            <div class="pulse-ring ring-two"></div>
           </div>
+        </div>
+      </div>
 
-          <div class="metric-grid">
-            <div class="glass-card metric">
-              <span>హృదయ స్పందన</span>
-              <strong>78</strong>
-              <small>ప్రతి నిమిషం</small>
-            </div>
-            <div class="glass-card metric">
-              <span>సంప్రదింపులు</span>
-              <strong>12</strong>
-              <small>ఈ నెల</small>
-            </div>
-          </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
 
-          <div class="glass-card appointment">
-            <span>తదుపరి అపాయింట్‌మెంట్</span>
-            <strong>రేపు ఉదయం 10:30</strong>
-            <p>సాధారణ వైద్య సంప్రదింపు</p>
-          </div>
+    <section class="story section curved-top" id="story" aria-labelledby="storyTitle">
+      <div class="container narrow">
+        <p class="section-label reveal">మన కథ</p>
+        <h2 id="storyTitle" class="reveal">ఈ ప్రయాణం ఎలా ప్రారంభమైంది?</h2>
+        <div class="story-panel reveal">
+          <p>
+            ఐదు సంవత్సరాలుగా పక్షవాతంతో జీవిస్తున్న తన తండ్రిని ఒక కుమారుడు
+            దగ్గరగా చూసిన అనుభవం నుంచి ఈ ఆలోచన పుట్టింది.
+          </p>
+          <p>
+            ఆ ప్రయాణంలో అత్యంత కష్టం నిశ్శబ్దం కాదు. ఆయన ఏమి చెప్పాలనుకుంటున్నారో
+            తెలియకపోవడమే.
+          </p>
+          <p>
+            ఒక గ్లాస్ నీళ్లు కావాలా, నొప్పి ఉందా, ఎవరో గుర్తొస్తున్నారా,
+            లేక కేవలం “ధన్యవాదాలు” చెప్పాలనుకుంటున్నారా అనే చిన్న ప్రశ్నలు కూడా
+            కుటుంబానికి పెద్ద బాధగా మారాయి.
+          </p>
+          <p>
+            ఆ బాధలోనుంచే Pilupu పుట్టింది. మాటలు రాకపోయినా మనసు వినబడేలా చేయాలనే
+            ఆశగా.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="problem section" id="problem" aria-labelledby="problemTitle">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">సేవలు</p>
-          <h2>ఆరోగ్య అవసరాలకు సమగ్ర పరిష్కారం</h2>
-          <p>వ్యక్తిగత ఆరోగ్యం నుంచి కుటుంబ సంరక్షణ వరకు, సరళమైన అనుభవంతో.</p>
+          <p class="section-label">సమస్య</p>
+          <h2 id="problemTitle">చిన్న అవసరం కూడా కొన్నిసార్లు పెద్ద నిశ్శబ్దంగా మారుతుంది.</h2>
         </div>
 
-        <div class="cards">
-          <article class="service-card reveal">
-            <div class="icon" aria-hidden="true">✦</div>
-            <h3>వైద్య సంప్రదింపు</h3>
-            <p>మీ ఆరోగ్య సమస్యలకు అనుభవజ్ఞులైన వైద్యుల నుంచి వేగవంతమైన మార్గదర్శకం.</p>
+        <div class="story-cards">
+          <article class="visual-card reveal">
+            <div class="card-icon" aria-hidden="true">నీ</div>
+            <h3>నీళ్లు కావాలి</h3>
+            <div class="flow">
+              <span>మాట్లాడలేరు</span>
+              <i></i>
+              <span>కుటుంబం ఊహిస్తుంది</span>
+              <i></i>
+              <span>సమయం గడుస్తుంది</span>
+            </div>
           </article>
 
-          <article class="service-card reveal">
-            <div class="icon" aria-hidden="true">●</div>
-            <h3>ఆరోగ్య రికార్డులు</h3>
-            <p>రిపోర్టులు, మందులు, వైద్య చరిత్రను ఒకే సురక్షిత ప్రదేశంలో నిర్వహించండి.</p>
+          <article class="visual-card reveal">
+            <div class="card-icon" aria-hidden="true">మం</div>
+            <h3>మందు కావాలి</h3>
+            <div class="flow">
+              <span>చెప్పలేరు</span>
+              <i></i>
+              <span>అందరూ అర్థం చేసుకోవడానికి ప్రయత్నిస్తారు</span>
+              <i></i>
+              <span>ఆందోళన పెరుగుతుంది</span>
+            </div>
           </article>
 
-          <article class="service-card reveal">
-            <div class="icon" aria-hidden="true">◆</div>
-            <h3>మందుల గుర్తింపులు</h3>
-            <p>సమయానికి మందులు తీసుకునేలా మృదువైన గుర్తింపులు మరియు కుటుంబ అలర్ట్లు.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="icon" aria-hidden="true">▲</div>
-            <h3>అత్యవసర సహాయం</h3>
-            <p>అవసరమైన సమయంలో సరైన సంప్రదింపులు, సమీప సహాయం కోసం వేగమైన మార్గం.</p>
+          <article class="visual-card reveal">
+            <div class="card-icon" aria-hidden="true">హృ</div>
+            <h3>ధన్యవాదాలు చెప్పాలనుంది</h3>
+            <div class="flow">
+              <span>భావం ఉంది</span>
+              <i></i>
+              <span>మాటలు రావు</span>
+              <i></i>
+              <span>మనసు లోపలే మిగిలిపోతుంది</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section care-section" id="care">
+    <section class="vision section" id="vision" aria-labelledby="visionTitle">
+      <div class="wave-top" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64 C240,128 480,0 720,56 C960,112 1200,20 1440,72 L1440,0 L0,0 Z"></path>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-label">మా లక్ష్యం</p>
+          <h2 id="visionTitle">నిశ్శబ్దాన్ని అర్థమయ్యే సంభాషణగా మార్చే భవిష్యత్తు.</h2>
+          <p>
+            ఇది పూర్తయిన ఉత్పత్తి కాదు. ఇది పరిశోధన, అనుభవాలు, కుటుంబాల కథలు,
+            మరియు బాధ్యతగల సాంకేతికతతో నెమ్మదిగా రూపం దాల్చే ప్రయాణం.
+          </p>
+        </div>
+
+        <div class="timeline" aria-label="Pilupu భవిష్యత్ ప్రయాణం">
+          <div class="timeline-item reveal">
+            <span>ఈరోజు</span>
+            <p>ఆలోచనను స్పష్టంగా నిర్వచించడం</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>పరిశోధన</span>
+            <p>కుటుంబాలు, సంరక్షకులు, నిపుణుల అనుభవాలు వినడం</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>నమూనా</span>
+            <p>సులభమైన కమ్యూనికేషన్ పద్ధతులను పరీక్షించడం</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>కృత్రిమ మేధస్సు సహాయం</span>
+            <p>వ్యక్తి అవసరాలను మరింత త్వరగా అర్థం చేసుకునే మార్గాలు</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>వ్యక్తిగతీకరణ</span>
+            <p>ప్రతి కుటుంబానికి, ప్రతి వ్యక్తికి సరిపోయే అనుభవం</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>స్వర పునర్నిర్మాణం</span>
+            <p>భవిష్యత్తులో వ్యక్తి స్వరాన్ని మరింత దగ్గరగా తీసుకురావాలనే ఆశ</p>
+          </div>
+          <div class="timeline-item reveal">
+            <span>ప్రపంచవ్యాప్త కుటుంబాలకు సహాయం</span>
+            <p>భాష, దూరం, పరిస్థితి దాటిన మానవ అనుబంధం</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey section" id="journey" aria-labelledby="journeyTitle">
       <div class="container split">
-        <div class="reveal">
-          <p class="eyebrow">సంరక్షణ</p>
-          <h2>కుటుంబ ఆరోగ్యాన్ని సులభంగా చూసుకునే విధానం</h2>
+        <div class="journey-copy reveal">
+          <p class="section-label">ప్రయాణం</p>
+          <h2 id="journeyTitle">Pilupu ఎలా పనిచేయవచ్చు?</h2>
           <p>
-            తల్లిదండ్రులు, పిల్లలు, పెద్దలు అందరి ఆరోగ్య సమాచారాన్ని ఒకే చోట
-            నిర్వహిస్తూ, అవసరమైనప్పుడు సరైన చర్య తీసుకోవచ్చు.
+            ఇది దీర్ఘకాలిక దృష్టి మాత్రమే. ప్రతి దశలో నిజమైన కుటుంబాల అనుభవం,
+            వైద్య మరియు సంరక్షణ నిపుణుల సూచనలు, బాధ్యతాయుత పరిశోధన అవసరం.
+          </p>
+        </div>
+
+        <div class="process-map reveal" aria-label="Pilupu పని చేసే సాధ్యమైన విధానం">
+          <div class="process-step">
+            <span>1</span>
+            <p>కుటుంబం వ్యక్తి ప్రొఫైల్ సృష్టించడంలో సహాయం చేస్తుంది</p>
+          </div>
+          <div class="process-step">
+            <span>2</span>
+            <p>రోజువారీ అవసరాల మాటలు చేరుస్తారు</p>
+          </div>
+          <div class="process-step">
+            <span>3</span>
+            <p>కృత్రిమ మేధస్సు సంభాషణ శైలిని అర్థం చేసుకుంటుంది</p>
+          </div>
+          <div class="process-step">
+            <span>4</span>
+            <p>వ్యక్తి సరైన భావాన్ని ఎంచుకుంటారు</p>
+          </div>
+          <div class="process-step">
+            <span>5</span>
+            <p>Pilupu ఆ భావాన్ని మాటగా వినిపిస్తుంది</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ideas section" id="ideas" aria-labelledby="ideasTitle">
+      <div class="container">
+        <div class="ideas-shell reveal">
+          <p class="section-label">మీ ఆలోచనలు</p>
+          <h2 id="ideasTitle">ఈ ప్రయాణంలో మీరు కూడా భాగమవ్వండి</h2>
+          <p>
+            మాట్లాడలేని వ్యక్తిని మీరు ఎప్పుడైనా చూసుకున్నారా? మీరు సంరక్షకులా,
+            స్పీచ్ థెరపిస్టా, వైద్యులా, పరిశోధకులా, విద్యార్థులా, ఇంజినీర్లా,
+            లేక కుటుంబ సభ్యులా? మీ అనుభవం Pilupu రూపాన్ని మార్చగలదు.
           </p>
 
-          <ul class="feature-list">
-            <li>వ్యక్తిగత ఆరోగ్య ప్రొఫైల్స్</li>
-            <li>సురక్షిత రిపోర్ట్ నిల్వ</li>
-            <li>నియమిత ఆరోగ్య పరిశీలనలు</li>
-            <li>సంరక్షకుల కోసం సహకార యాక్సెస్</li>
-          </ul>
-        </div>
-
-        <div class="care-visual reveal" aria-label="కుటుంబ ఆరోగ్య వివరాలు">
-          <div class="orbit">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="contribution-grid">
+            <span>సంరక్షకులు</span>
+            <span>కుటుంబ సభ్యులు</span>
+            <span>స్పీచ్ థెరపిస్టులు</span>
+            <span>వైద్యులు</span>
+            <span>పరిశోధకులు</span>
+            <span>విద్యార్థులు</span>
+            <span>ఇంజినీర్లు</span>
+            <span>ఆశతో ఉన్నవారు</span>
           </div>
-          <div class="center-badge">
-            <strong>Pilupu</strong>
-            <small>కుటుంబ ఆరోగ్యం</small>
+
+          <div class="idea-actions">
+            <a class="magnetic-button primary-button" href="#contact">మీ కథ చెప్పండి</a>
+            <a class="magnetic-button ghost-button" href="#contact">అభిప్రాయం ఇవ్వండి</a>
+            <a class="magnetic-button ghost-button" href="#contact">ఒక ఆలోచన సూచించండి</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="doctors">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">వైద్యులు</p>
-          <h2>ధృవీకరించిన వైద్యులతో నమ్మకమైన సంప్రదింపులు</h2>
-          <p>సరైన నిపుణుడిని ఎంచుకోవడం ఇప్పుడు మరింత స్పష్టంగా, సులభంగా.</p>
-        </div>
-
-        <div class="doctor-grid">
-          <article class="doctor-card reveal">
-            <div class="doctor-avatar">వై</div>
-            <h3>సాధారణ వైద్యులు</h3>
-            <p>జ్వరాలు, అలసట, సాధారణ ఆరోగ్య సమస్యల కోసం.</p>
-          </article>
-
-          <article class="doctor-card reveal">
-            <div class="doctor-avatar">బా</div>
-            <h3>బాల వైద్యులు</h3>
-            <p>పిల్లల ఆరోగ్యం, పెరుగుదల, టీకాల మార్గదర్శకం.</p>
-          </article>
-
-          <article class="doctor-card reveal">
-            <div class="doctor-avatar">స్త్రీ</div>
-            <h3>స్త్రీ ఆరోగ్యం</h3>
-            <p>మహిళల ఆరోగ్య అవసరాలకు సున్నితమైన సంరక్షణ.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section pricing-section" id="pricing">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">ప్లాన్లు</p>
-          <h2>ప్రతి కుటుంబానికి సరిపోయే ఆరోగ్య ప్రణాళికలు</h2>
-        </div>
-
-        <div class="pricing-grid">
-          <article class="price-card reveal">
-            <h3>ప్రారంభం</h3>
-            <p class="price">₹199</p>
-            <p>ప్రాథమిక ఆరోగ్య అవసరాల కోసం.</p>
-            <ul>
-              <li>నెలకు 2 సంప్రదింపులు</li>
-              <li>ఆరోగ్య రికార్డులు</li>
-              <li>మందుల గుర్తింపులు</li>
-            </ul>
-            <a class="btn btn-secondary" href="#contact">ఎంచుకోండి</a>
-          </article>
-
-          <article class="price-card featured reveal">
-            <span class="badge">ప్రసిద్ధం</span>
-            <h3>కుటుంబం</h3>
-            <p class="price">₹499</p>
-            <p>కుటుంబ ఆరోగ్య నిర్వహణకు ఉత్తమ ఎంపిక.</p>
-            <ul>
-              <li>నెలకు 8 సంప్రదింపులు</li>
-              <li>5 కుటుంబ సభ్యులు</li>
-              <li>అత్యవసర సహాయ ప్రాధాన్యం</li>
-            </ul>
-            <a class="btn btn-primary" href="#contact">ఎంచుకోండి</a>
-          </article>
-
-          <article class="price-card reveal">
-            <h3>ప్రత్యేకం</h3>
-            <p class="price">₹999</p>
-            <p>నిరంతర ఆరోగ్య పర్యవేక్షణ కోరేవారికి.</p>
-            <ul>
-              <li>అపరిమిత సంప్రదింపులు</li>
-              <li>వ్యక్తిగత ఆరోగ్య సమీక్ష</li>
-              <li>ప్రాధాన్య సహాయం</li>
-            </ul>
-            <a class="btn btn-secondary" href="#contact">ఎంచుకోండి</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
+    <section class="contact section" id="contact" aria-labelledby="contactTitle">
       <div class="container contact-grid">
-        <div class="reveal">
-          <p class="eyebrow">సంప్రదించండి</p>
-          <h2>మీ ఆరోగ్య ప్రయాణాన్ని ఈరోజే ప్రారంభించండి</h2>
+        <div class="contact-copy reveal">
+          <p class="section-label">సంప్రదించండి</p>
+          <h2 id="contactTitle">మీ ఆలోచన చెప్పండి</h2>
           <p>
-            మీ వివరాలు పంపండి. మా బృందం త్వరలో మీతో మాట్లాడి సరైన సేవను సూచిస్తుంది.
+            ఈ వెబ్‌సైట్ ఒక పెద్ద కలకు కేవలం ప్రారంభం మాత్రమే. మీ అనుభవం,
+            ప్రశ్న, సూచన లేదా కథ ఈ ప్రయాణానికి విలువైన దిశ చూపవచ్చు.
           </p>
         </div>
 
-        <form class="contact-form reveal" aria-label="సంప్రదింపు ఫారం">
+        <form class="contact-form reveal" aria-label="ఆలోచన పంపే ఫారం">
           <label>
-            పేరు
+            <span>పేరు</span>
             <input type="text" name="name" autocomplete="name" required />
           </label>
 
           <label>
-            ఫోన్ నంబర్
-            <input type="tel" name="phone" autocomplete="tel" required />
+            <span>ఇమెయిల్</span>
+            <input type="email" name="email" autocomplete="email" required />
           </label>
 
           <label>
-            అవసరం
-            <select name="need" required>
-              <option value="">ఎంచుకోండి</option>
-              <option>వైద్య సంప్రదింపు</option>
-              <option>కుటుంబ ప్లాన్</option>
-              <option>ఆరోగ్య రికార్డులు</option>
-              <option>అత్యవసర సహాయం</option>
-            </select>
+            <span>మీ ఆలోచన</span>
+            <textarea name="message" rows="6" required></textarea>
           </label>
 
-          <label>
-            సందేశం
-            <textarea name="message" rows="4"></textarea>
-          </label>
-
-          <button class="btn btn-primary" type="submit">పంపండి</button>
-          <p class="form-note" role="status" aria-live="polite"></p>
+          <button class="magnetic-button primary-button" type="submit">పంపండి</button>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">+</span>
-        <span>Pilupu</span>
-      </a>
-      <p>నమ్మకమైన ఆరోగ్య సేవలు, మీకు దగ్గరగా.</p>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-symbol" aria-hidden="true"></span>
+          <span>Pilupu</span>
+        </a>
+        <p>ప్రతి పిలుపు వినబడాలి.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="అదనపు లింకులు">
+        <a href="#top">గిట్‌హబ్</a>
+        <a href="#top">లింక్డ్‌ఇన్</a>
+        <a href="#contact">ఇమెయిల్</a>
+        <a href="#vision">భవిష్యత్ పరిశోధన ప్రాజెక్ట్</a>
+      </nav>
     </div>
   </footer>
 
