@@ -1301,4 +1301,16 @@ textarea:focus {
   .cursor-glow {
     display: none;
   }
+  .footer {
+    margin-top: 100px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #9ca3af;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.95rem;
+}
+
+.footer p {
+    margin: 6px 0;
+}
 }
