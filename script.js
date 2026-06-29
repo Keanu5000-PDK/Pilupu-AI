@@ -7,9 +7,8 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const revealElements = document.querySelectorAll(".reveal");
 const magneticButtons = document.querySelectorAll(".magnetic-button");
-const contactForm = document.querySelector(".contact-form");
+const contactForm = document.getElementById("feedback-form");
 const formStatus = document.querySelector(".form-status");
-
 const savedTheme = localStorage.getItem("pilupu-theme");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
@@ -19,7 +18,9 @@ function setTheme(theme) {
 }
 
 setTheme(savedTheme || (prefersDark ? "dark" : "light"));
-
+emailjs.init({
+  publicKey: "p8gP3vENK_srTge6G"
+});
 window.addEventListener("load", () => {
   window.setTimeout(() => {
     body.classList.add("loaded");
@@ -128,12 +129,45 @@ window.addEventListener("scroll", () => {
   });
 }, { passive: true });
 
-contactForm.addEventListener("submit", (event) => {
+if (contactForm) {  
+contactForm.addEventListener("submit", function (event) {
   event.preventDefault();
-  formStatus.textContent = "ధన్యవాదాలు. మీ ఆలోచన ఈ ప్రయాణానికి విలువైనది.";
-  contactForm.reset();
-});
 
+  const submitButton = contactForm.querySelector("button");
+
+  submitButton.disabled = true;
+  submitButton.textContent = "పంపుతోంది...";
+
+  formStatus.textContent = "";
+
+  emailjs
+    .sendForm(
+      "service_wus9fs5",
+      "template_0tnbye5",
+      "#feedback-form"
+    )
+    .then(function () {
+      formStatus.style.color = "#4ade80";
+      formStatus.textContent =
+        "✅ ధన్యవాదాలు! మీ సందేశం విజయవంతంగా పంపబడింది.";
+
+      contactForm.reset();
+
+      submitButton.disabled = false;
+      submitButton.textContent = "పంపండి";
+    })
+    .catch(function (error) {
+      console.error(error);
+
+      formStatus.style.color = "#ff6b6b";
+      formStatus.textContent =
+        "❌ సందేశం పంపలేకపోయాము. దయచేసి మళ్లీ ప్రయత్నించండి.";
+
+      submitButton.disabled = false;
+      submitButton.textContent = "పంపండి";
+    });
+ }); 
+} //
 document.querySelectorAll("a[href^='#']").forEach((anchor) => {
   anchor.addEventListener("click", (event) => {
     const targetId = anchor.getAttribute("href");

@@ -303,15 +303,28 @@
           </p>
         </div>
 
-        <form class="contact-form reveal" aria-label="ఆలోచన పంపే ఫారం">
+        <form
+    id="feedback-form"
+    class="contact-form reveal"
+    aria-label="ఆలోచన పంపే ఫారం">
           <label>
             <span>పేరు</span>
-            <input type="text" name="name" autocomplete="name" required />
+            <input
+    type="text"
+    name="from_name"
+    autocomplete="name"
+    required
+/>
           </label>
 
           <label>
             <span>ఇమెయిల్</span>
-            <input type="email" name="email" autocomplete="email" required />
+            <input
+    type="email"
+    name="reply_to"
+    autocomplete="email"
+    required
+/>
           </label>
 
           <label>
@@ -344,7 +357,7 @@
       </nav>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
